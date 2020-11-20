@@ -12,14 +12,29 @@ class App extends Component {
 
     this.setState({ movies: apiData.results })
 
-    console.log(apiData)
+    console.log(this.state)
   }
   render() {
     return (
       <div>
-        <h1>Is It 1989? I Think It Is! PARTY LIKE IT'S 1989</h1>
+        <style>
+          @import
+          url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@600&family=Big+Shoulders+Inline+Text:wght@900&family=Goldman:wght@700&display=swap');
+        </style>
+
+        <h1>API for 80's Movies</h1>
         {this.state.movies.map(movie => (
-          <h2>{movie.original_title}</h2>
+          <p>
+            <img
+              className="movie-poster"
+              src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`}
+            />
+            <br></br>
+            <div className="titles">{movie.original_title}</div>
+            <br></br>
+            <br></br>
+            <div className="overview"> {movie.overview}</div>
+          </p>
         ))}
       </div>
     )

@@ -9,6 +9,38 @@ html {
 body {
     margin: 0;
     min-height: 100%;
+    background: url(saved-by-the-bell-2.jpg);
+}
+
+h1 {
+    font-family: 'Goldman', cursive;
+    font-size: 3rem;
+    color: #f7f7f9;
+    text-shadow: .2rem .2rem hsl(327, 73%, 53%);
     display: flex;
     justify-content: center;
+}
+
+.titles {
+    font-family: 'Big Shoulders Inline Text', cursive;
+    font-size: 3rem;
+    color: #f7f7f9;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.overview {
+    font-family: 'Big Shoulders Inline Display', cursive;
+    font-size: 2rem;
+    color: #f7f7f9;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.movie-poster {
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
